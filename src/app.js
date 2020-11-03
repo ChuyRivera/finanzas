@@ -15,7 +15,7 @@ app.use(express.json())
 app.set('view engine','ejs');
 app.set('view', path.join(__dirname,'views'));
 
-//Rutas
+//Rutas UwU
 
 //Archivos Estaticos
 app.use(express.static(path.join(__dirname,'public')));
