@@ -7,15 +7,17 @@ const app = express();
 const port = 3000;
 
 const db = require('./db');
+const homeRoutes = require('./routes/home')
 
 //Config express
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
 app.set('view engine','ejs');
-app.set('view', path.join(__dirname,'views'));
+app.set('views', path.join(__dirname,'views'));
 
-//Rutas cambio
+//Rutas
+app.use('/',homeRoutes);
 
 //Archivos Estaticos
 app.use(express.static(path.join(__dirname,'public')));

@@ -1,7 +1,7 @@
 const controller = {};
 
 controller.list = (req,res)=>{
-    res.send('Holamundo');
+    res.render('home');
 }
 
 module.exports = controller;
