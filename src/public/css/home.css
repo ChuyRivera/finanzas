@@ -17,5 +17,10 @@ body{
 /*clase para ajustar el tamaño de la imagen de la cabecera*/
 .bg-header{
     width: 100%;
-    height: 60%;
+    height: 120px;
+}
+
+.grupo-cards{
+    width: 90%;
+    margin-left: 8%;
 }

@@ -1,20 +1,25 @@
 <%- include('partials/_header.ejs') %>
 
 
+
 <div class="container container-fluid"> <!-- el contenido del div abarca el 100% de la pantalla -->
     <div class="row">
         <div class="col-md-12"> <!--Abarca las 12 columnas que maneja bootstrap-->
             <img class="bg-header" src="/img/bg-home.png"/> <!--imagen de fondo-->
-            <i class="fas fa-user-circle"></i>
+            <nav class="navbar navbar-toggler navbar-light bg-light"> <!--navbar con la información del usuario-->
+                <span class="navbar-collapse">Jesús Antonio Leyva Rivera</span>
+                &nbsp;
+                <span class="ml-auto p-2">Balance: $000.00 </span>
+            </nav>
         </div>
     </div>
     <div>
         <div class="col-md-2">&nbsp;</div><!--Espacio vacío para simular un margen-->
         <div class="col-md-8">
-            <div class="row"><!--div de la card-->
+            <div class="row grupo-cards"><!--div de las cards -->
                 <div class="col">
-                    <div class="card" style="width: 8rem;">
-                        <div class="card-body">
+                    <div class="card" style="width: 8rem;"> <!--div de las card de ingresos -->
+                        <div class="card-body text-success">
                             <h5 class="card-title">Ingresos del mes</h5>
                             <i class="fas fa-hand-holding-usd fa-3x"></i>
                             <h4>$000.00</h4>
@@ -22,8 +27,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 8rem;">
-                        <div class="card-body">
+                    <div class="card" style="width: 8rem;"> <!--div de la card de egresos -->
+                        <div class="card-body text-danger">
                             <h5 class="card-title">Egresos del mes</h5>
                             <i class="fas fa-money-bill-wave fa-3x"></i>
                             <h4>$000.00</h4>

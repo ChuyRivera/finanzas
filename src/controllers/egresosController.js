@@ -1,8 +1,8 @@
 const controller = {};
 
-//Home métodos
+//ingresos métodos
 controller.list = (req,res)=>{
-    res.render('home');
+    res.render('egresos');
 }
 
 

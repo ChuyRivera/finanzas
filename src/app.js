@@ -8,6 +8,8 @@ const port = 3000;
 
 const db = require('./db');
 const homeRoutes = require('./routes/home')
+const ingresosRoutes = require('./routes/ingresos');
+const egresosRoutes = require('./routes/egresos');
 
 //Config express
 app.use(express.urlencoded({extended: false}))
@@ -18,6 +20,11 @@ app.set('views', path.join(__dirname,'views'));
 
 //Rutas
 app.use('/',homeRoutes);
+
+app.get('/ingresos', ingresosRoutes);
+
+app.get('/egresos', egresosRoutes);
+
 
 //Archivos Estaticos
 app.use(express.static(path.join(__dirname,'public')));
