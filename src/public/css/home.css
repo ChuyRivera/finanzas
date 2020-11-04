@@ -20,7 +20,22 @@ body{
     height: 120px;
 }
 
+/*cards*/
 .grupo-cards{
     width: 90%;
     margin-left: 8%;
+    margin-top: 1px;
+}
+
+.card-ingreso{
+    width: 78%;
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+/*botones*/
+.btn-anadirIngreso{
+    width: 80%;
+    margin-left: 23%;
+    margin-top: 20px;
 }

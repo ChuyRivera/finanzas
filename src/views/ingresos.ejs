@@ -10,8 +10,33 @@
             </nav>
         </div>
     </div>
+
+    <div>  <!--boton para añadir ingreso-->
+        <form action="/addIngreso" method="POST">
+            <div class="input-group btn-anadirIngreso">
+                <input type="text" class="" name="cantidad" id="ingreso" placeholder="Digita el nuevo ingreso">
+                <div class="input-goup-append">
+                    <button type="submit" class="btn btn-success"><i class="fas fa-coins"></i></button>
+                </div>
+            </div>  
+        </form> 
+    </div>
+
+    <div class="row grupo-cards"><!--div de las cards -->
+        <div class="col">
+            <div class="card card-ingreso"> <!--div de las card de ingresos -->
+                <div class="card-body text-success">
+                    <p>04/11/2020</p>
+                    <p>Pago de nomina</p>
+                    <h5>$4000.00</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 </div>
-<h1>ingresos</h1>
+
 
 
 

@@ -22,6 +22,7 @@ app.set('views', path.join(__dirname,'views'));
 app.use('/',homeRoutes);
 
 app.get('/ingresos', ingresosRoutes);
+app.post('/addIngreso',ingresosRoutes);
 
 app.get('/egresos', egresosRoutes);
 
